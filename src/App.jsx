@@ -52,7 +52,7 @@ function App() {
       <aside className="sidebar">
         <div className="logo">
           <Sprout size={32} />
-          <span>Alma Camp.</span>
+          <span>Alma Camponesa</span>
         </div>
 
         <nav>

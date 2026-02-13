@@ -226,7 +226,7 @@ body {
   }
 
   .form-card {
-    padding: 20px; /* Reduz padding interno do formulário */
+    padding: 30px; /* Reduz padding interno do formulário */
     max-width: 100%; /* Ocupa a largura disponível */
   }
 
