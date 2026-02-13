@@ -1,0 +1,204 @@
+:root {
+  --moss-dark: #2f3e2e;
+  --moss-primary: #4a6741;
+  --moss-hover: #3a5232;
+  --bg-light: #f3f4f6;
+  --white: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+}
+
+
+
+/* --- SIDEBAR --- */
+.sidebar {
+  width: 250px;
+  background-color: var(--moss-dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background-color: var(--moss-primary); /* Item ativo fixo */
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: default;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* --- CONTAINER PAI --- */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Ocupa a altura total da tela */
+  width: 100%;
+  overflow: hidden; /* Evita rolagens indesejadas no container pai */
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+.main-content {
+  flex: 1; /* Ocupa todo o espaço restante à direita da sidebar */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o card horizontalmente na área vermelha */
+  justify-content: center; /* Centraliza o card verticalmente na área vermelha */
+  background-color: var(--bg-light);
+  overflow-y: auto; /* Permite rolagem apenas se o conteúdo for maior que a tela */
+}
+
+/* --- FORMULÁRIO --- */
+.form-card {
+  background: var(--white);
+  width: 100%;
+  max-width: 800px; /* Aumentado para preencher melhor a área destacada */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-top: 6px solid var(--moss-primary);
+  box-sizing: border-box;
+}
+
+/* --- HISTÓRICO --- */
+.history-section {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px; /* Alinhado com a largura do card */
+}
+
+.form-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: var(--moss-dark);
+  font-size: 1.8rem;
+}
+
+.form-header p {
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--moss-dark);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  background-color: #f9fafb;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: var(--moss-primary);
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--moss-primary);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-submit:hover {
+  background-color: var(--moss-hover);
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+
+
+.history-title {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.simple-table th {
+  text-align: left;
+  padding: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.simple-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-main);
+}
