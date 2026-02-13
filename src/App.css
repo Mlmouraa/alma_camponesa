@@ -202,3 +202,45 @@ body {
   border-bottom: 1px solid var(--border);
   color: var(--text-main);
 }
+
+/* --- RESPONSIVIDADE PARA CELULAR --- */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Sidebar fica em cima do conteúdo */
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar ocupa a largura toda */
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding: 20px; /* Reduz o respiro lateral no celular */
+    align-items: center; /* Garante que o card fique no meio */
+  }
+
+  .form-card {
+    padding: 20px; /* Reduz padding interno do formulário */
+    max-width: 100%; /* Ocupa a largura disponível */
+  }
+
+  .row {
+    flex-direction: column; /* Inputs de Macho e Fêmea ficam um abaixo do outro */
+    gap: 10px;
+  }
+
+  .history-section {
+    max-width: 100%;
+    overflow-x: auto; /* Permite rolar a tabela lateralmente se for muito larga */
+  }
+
+  .simple-table {
+    font-size: 0.85rem; /* Diminui a letra da tabela para caber melhor */
+  }
+}
