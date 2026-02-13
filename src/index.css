@@ -65,3 +65,47 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f3f4f6; /* Texto claro (var --bg-light) */
+    background-color: #1a1a1a; /* Fundo escuro profundo */
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    color: #f3f4f6;
+  }
+
+  /* Ajuste para o card do formulário no modo escuro */
+  .form-card {
+    background-color: #262626; /* Cinza bem escuro */
+    border-top: 6px solid var(--moss-primary);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .form-header h2, .input-group label {
+    color: #e5e7eb; /* Texto quase branco */
+  }
+
+  .custom-input {
+    background-color: #333333;
+    border-color: #444444;
+    color: #ffffff;
+  }
+
+  .custom-input:focus {
+    background-color: #3d3d3d;
+    border-color: var(--moss-primary);
+  }
+
+  .history-title {
+    color: #9ca3af;
+    border-bottom: 1px solid #444444;
+  }
+
+  .simple-table td {
+    color: #e5e7eb;
+    border-bottom: 1px solid #333333;
+  }
+}
